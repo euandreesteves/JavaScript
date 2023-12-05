@@ -7,53 +7,74 @@
 
     <style>
         * {
-            font-family: 'Helvetica Neue';
-            font-weight: 550;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
             cursor: default;
         }
 
         #principal {
-            border: 1px solid red;
         }
 
         #placar {
-            border: 1px solid blue;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #fff;
         }
 
         #jogador, #computador {
+            position: relative;
             flex-grow: 1;
+            border-radius: 5px;
+            color: #fff;
+            padding: 20px;
         }
 
-        #jogador {
-            background-color: #e74c3c;
-            
-        }
-
-        #jogador #jogador-escolha {
-            list-style: none;
+        #jogador h2, #computador h2 {
             margin: 0;
             padding: 0;
         }
 
-        #jogador #jogador-escolha li {
+        #jogador {
+            background-color: #ff7675;
+            
+        }
+        
+        #jogador-nome, #computador-nome {
+            font-size: 24px;
+        }
+
+        #jogador-pontos, #computador-pontos {
+            position: absolute;
+            top: 8px;
+            font-size: 52px;
+        }
+
+        #jogador-pontos, #computador-pontos {
+            right: 20px;
+        }
+
+        #jogador #jogador-escolha, #computador #computador-escolha {
+            list-style: none;
+            text-align: center;
+            margin: 30px 0 0;
+            padding: 0;
+        }
+
+        #jogador #jogador-escolha li, #computador #computador-escolha li {
             display: inline;
+            padding: 0 15px;
         }
 
-        #jogador #jogador-escolha a {
-
+        #jogador #jogador-escolha a, #computador #computador-escolha a {
+            opacity: .2;
         }
 
-        #jogador #jogador-escolha img {
+        #jogador #jogador-escolha a:hover, #computador #computador-escolha a:hover {
+            opacity: 1;
+        }
+
+        #jogador #jogador-escolha img, #computador #computador-escolha img  {
             max-width: 80px;
-        }
-
-        #versus {
-            background-color: blue;
-                        
         }
 
         #computador {
@@ -61,8 +82,12 @@
 
         }
 
+        #versus {
+                        
+        }
+
         #mensagem {
-            border: 1px solid green;
+          color: violet; 
         }
     </style>
 </head>
@@ -74,19 +99,24 @@
            <div id="jogador">
             <h2 id="jogador-nome">Felipe</h2>
             <span id="jogador-pontos">0</span>
-            <ul id="jogador-escolha">
-                <li><a id="jogador-escolha-1"><img src="img/rock.png"></a></li>
-                <li><a id="jogador-escolha-2"><img src="img/paper.png"></a></li>
-                <li><a id="jogador-escolha-3"><img src="img/scissor.png"></a></li>
-            </ul>
-           </div>
-
+                  <ul id="jogador-escolha">
+                        <li><a id="jogador-escolha-1"><img src="img/rock.png"></a></li>
+                        <li><a id="jogador-escolha-2"><img src="img/paper.png"></a></li>
+                        <li><a id="jogador-escolha-3"><img src="img/scissor.png"></a></li>
+                    </ul>
+            </div> 
             <div id="versus">
             vs
             </div>
 
             <div id="computador">
-                computador
+                <h2 id="computador-nome">Computador</h2>
+                <span id="computador-pontos">0</span>
+                    <ul id="computador-escolha">
+                        <li><a id="computador-escolha-1"><img src="img/rock.png"></a></li>
+                        <li><a id="computador-escolha-2"><img src="img/paper.png"></a></li>
+                        <li><a id="computador-escolha-3"><img src="img/scissor.png"></a></li>
+                    </ul>
             </div>
 
         </div>
