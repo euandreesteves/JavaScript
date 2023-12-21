@@ -1,0 +1,26 @@
+<!-- 9. Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius. o C = (5 * (F-32) / 9). -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Converter a temperatura de Graus Farenheit para Graus Celsius.</title>
+    </head>
+    <body>
+        <div id="maindiv">
+            <h1 id="main">Convertendo Graus Farenheit em Graus Celsius.</h1>
+            <h2 id="sub">Cálculo.</h2>
+        </div>
+    </body>
+    <script>
+        
+        var farenheit;
+        var celsius;
+
+       farenheit = prompt("Digite quantos Graus Farenheit está no momento.");
+       
+       celsius = (5 * (farenheit - 32) / 9);
+       document.getElementById('sub').innerHTML = ("A temperatura é de: " + celsius + "º Celsius.");
+
+    </script>
+</html>
