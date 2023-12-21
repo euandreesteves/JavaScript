@@ -1,0 +1,35 @@
+<!-- 11. Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre: a. o produto do dobro do primeiro com metade do segundo . b. a soma do triplo do primeiro com o terceiro. c. o terceiro elevado ao cubo. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body>
+        <div id="maindiv">
+            <h1 id="mainh1">Calculos diversos.</h1>
+            <h2 id="mainh2"></h2>
+            <h2 id="mainh3"></h2>
+            <h2 id="mainh4"></h2>
+        </div>
+    </body>
+    <script>
+
+        var numberInt1;
+        var numberInt2;
+        var numberFloat;
+
+        numberInt1 = prompt("Digite um número inteiro.");
+        numberInt2 = prompt("Digite outro número inteiro.");
+        numberFloat = prompt("Digite um número Float.");
+
+        var a = ((numberInt1 * 2) + (numberInt2 / 2));
+        var b = ((numberInt1 * 3) + (+numberFloat));
+        var c = Math.pow(numberFloat, 3);
+
+        document.getElementById('mainh2').innerHTML = ("O produto do dobro do primeiro número com metade do segundo número é: " + a);
+        document.getElementById('mainh3').innerHTML = ("A soma do triplo do primeiro número com o terceiro número é: " + b);
+        document.getElementById('mainh4').innerHTML = ("O terceiro número elevado ao cubo é: " + c);
+
+    </script>
+</html>
