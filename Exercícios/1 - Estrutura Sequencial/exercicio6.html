@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+        <body>
+            <div id="main">
+                <h1 id="titulo">Cálculo da área da Circunferência.</h1>
+                <h2 id="subtitulo">A área da Circunferência é de: </h2>
+            </div>
+        </body>
+<script>
+
+    var a;
+    var r;
+    var pi = 3.14;
+
+    alert("Para calcular a área da circunferência, digite o valor do raio em cm.");
+    r = prompt("Digite o valor do raio em cm.");
+    a = (r * r) * pi;
+    
+    document.getElementById('subtitulo').innerHTML = ("O valor da área é de: " + a + "cm²");
+
+</script>
+</html>
