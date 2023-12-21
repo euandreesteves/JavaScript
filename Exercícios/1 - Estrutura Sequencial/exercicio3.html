@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Hello world</title>
+    </head>
+        <body>
+            <center>
+                <h1 id="main">Please follow the instructions.</h1>
+                <h2 id="s">For the sum, enter two numbers.</h2>
+            </center>
+        </body>
+    <script>
+
+        var number1;
+        var number2;
+        var add;
+        number1 = prompt('Digite o primeiro número:');
+        number2 = prompt('Digite o segundo número:');
+        add = +number1 + +number2;
+        
+        alert(add)
+
+        document.getElementById('s').innerHTML = ('Add of these numbers is: ' + add);
+
+    </script>
+</html>

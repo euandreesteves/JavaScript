@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Exercício 4</title>
+    </head>
+        <body>
+            <div>
+                <h1>Para calcular a média das notas bimestrais, digite os valores.</h1>
+                <h2 id="instructions">Siga as instruções.</h2>
+            </div>
+        </body>
+    <script>
+        var n1, n2, n3, n4;
+        
+
+        n1 = prompt('Digite a nota do primeiro bimestre:');
+        n2 = prompt('Digite a nota do primeiro bimestre:');
+        n3 = prompt('Digite a nota do primeiro bimestre:');
+        n4 = prompt('Digite a nota do primeiro bimestre:');
+
+        var media = ((+n1 + +n2 + +n3 + +n4)/4);
+
+         document.getElementById('instructions').innerHTML = media;
+    </script>
+</html>
