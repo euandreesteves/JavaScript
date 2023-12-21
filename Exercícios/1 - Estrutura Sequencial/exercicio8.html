@@ -1,0 +1,28 @@
+<!-- 8. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês. -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calcular salário a ser recebido.</title>
+    </head>
+        <body>
+            <div>
+            <center>
+                <h1 id="main">Cálculo de salário através das horas trabalhadas.</h1>
+                <h2 id="sub">Cálculo</h2>
+            </div>
+            </center>
+        </body>
+<script>
+    
+            var hour;
+            var hourPrice;
+
+            hourPrice = prompt("Digite quanto você ganha por hora trabalhada.");
+            hour = prompt("Digite qual o número de horas trabalhadas no mês.");
+            
+            var mult = hourPrice * hour;
+            document.getElementById('sub').innerHTML = ("Seu salário é de R$" + mult + " por mês.");
+
+</script>
+</html>

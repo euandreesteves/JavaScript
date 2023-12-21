@@ -1,0 +1,27 @@
+<!-- 7. Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculo de área do quadrado em dobro.</title>
+    </head>
+        <body>
+            <div>
+                <h1 id="main">Calculo da área do quadrado em dobro.</h1>
+                <h2 id="sub">Cálculo</h2>
+            </div>
+        </body>
+<script>
+    
+    var a;
+    var lado;
+
+    lado = prompt("Digite o lado do quadrado em cm.");
+    
+    var a = ((lado * lado) * 2);
+    
+    document.getElementById('sub').innerHTML = ("A área do dobro do quadrado é de: " + a + "cm².");
+
+</script>
+</html>
