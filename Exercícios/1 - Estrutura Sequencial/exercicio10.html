@@ -1,0 +1,25 @@
+<!-- 10. Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Convertendo Graus Celsius para Graus Farenheit.</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="main">Convertendo Graus Celsius para Graus Fahrenheit</h1>
+            <h2 id="sub">Cálculo</h2>
+        </div>
+    </body>
+    <script>
+
+        var celsius;
+
+        celsius = prompt("Digite quantos Graus Celsius deseja converter em Graus Fahrenheit.")
+        var fahrenheit = celsius * 1.8 + 32;
+
+        document.getElementById('sub').innerHTML = ("A temperatura convertida é de: " + fahrenheit + "º Fahrenheit.");
+
+    </script>
+</html>
