@@ -7,12 +7,19 @@
     </head>
         <body>
             <div>
-                <h1></h1>
-                <h2 id="instructions"></h2>
+                <h1>Conversão de metros para centímetros.</h1>
+                <h2 id="convert">Conversão: </h2>
             </div>
         </body>
     <script>
+        var m;
+        var conversao;
+
+        alert("Para converter de metros para centimetros, digite os valores respectivos.");
+        m = prompt("Digite o valor em metros: ");
+        conversao = m * 100;
         
+        document.getElementById('convert').innerHTML = ('O valor convertido é de: ' + conversao + 'cm');
 
     </script>
 </html>
