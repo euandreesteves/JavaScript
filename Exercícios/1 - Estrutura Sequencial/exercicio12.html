@@ -1,0 +1,27 @@
+<!-- 12. Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculo do peso ideal.</title>
+    </head>
+    <body>
+        <div id="maindiv">
+            
+            <h1 id="mainh1">Calculando seu peso ideal.</h1>
+            <h2 id="mainh2"></h2>
+            
+        </div>
+    </body>
+    <script>
+        
+        var height;
+
+        height = prompt("Digite quantos metros você possui.");
+        var idealWeight = ((72.7 * height) - 58);
+
+        document.getElementById('mainh2').innerHTML = ("Seu peso ideal é de: " + idealWeight + "kg");
+
+    </script>
+</html>
