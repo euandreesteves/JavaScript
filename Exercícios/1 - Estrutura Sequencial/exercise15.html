@@ -1,0 +1,56 @@
+<!-- 15. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. 
+Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 
+8% para o INSS e 5% para o sindicato, faça um programa que nos dê:  
+- salário bruto. a. quanto pagou ao INSS. b. quanto pagou ao sindicato. c. o salário líquido. d.
+calcule os descontos e o salário líquido, conforme a tabela abaixo: 
++ 
+      Salário Bruto : R$ - 
+           IR (11%) : R$ - 
+          INSS (8%) : R$ - 
+    Sindicato ( 5%) : R$ = 
+    Salário Liquido : R$ 
+Obs.: Salário Bruto - Descontos = Salário Líquido.  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cálculo salarial.</title>
+    </head>
+    <body>
+        <div id="en">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+            <h1 id="mainh1">Calculo do salário mensal.</h1>
+            <h2 id="mainh2"></h2>
+            <h2 id="sub1h2"></h2>
+            <h2 id="sub2h2"></h2>
+            <h2 id="sub3h2"></h2>
+            <h2 id="sub4h2"></h2>
+            </center>
+        </div>
+    </body>
+    <script>
+
+        var workHour = prompt("Digite quantas horas você trabalha no mês.");
+        var priceHour = prompt("Digite o valor da hora trabalhada.");
+
+        var bruteSalary = workHour * priceHour;
+        var irTax = (11 / 100) * bruteSalary;
+        var inssTax = (8 / 100) * bruteSalary;
+        var syndicateTax = (5 / 100) * bruteSalary;
+        var liquidSalary = ((bruteSalary) - (irTax + inssTax + syndicateTax));
+
+        document.getElementById('mainh2').innerHTML = ("Salário Bruto: R$" + bruteSalary);
+        document.getElementById('sub1h2').innerHTML = ("IR (11%): R$" + irTax);
+        document.getElementById('sub2h2').innerHTML = ("INSS (8%): R$" + inssTax);
+        document.getElementById('sub3h2').innerHTML = ("Sindicato (5%): R$" + syndicateTax);
+        document.getElementById('sub4h2').innerHTML = ("Salário Líquido: R$" + liquidSalary);
+
+    </script>
+</html>
