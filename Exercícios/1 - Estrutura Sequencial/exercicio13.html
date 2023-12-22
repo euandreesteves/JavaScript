@@ -1,0 +1,74 @@
+<!-- 13. Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:  . 
+Para homens: (72.7*h) - 58 a. Para mulheres: (62.1*h) - 44.7 (h = altura) b. Peça o peso da pessoa e informe se ela está dentro, acima ou abaixo do peso. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calcular o peso ideal.</title>
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="mainh1">Cálculo do seu peso ideal.</h1>
+            <h2 id="mainh2">Cálculo</h2>
+            <h2 id="subh2">Cálculo</h2>
+        </div>
+    </body>
+    <script>
+        
+        let sex;
+        var height;
+        var weight;
+        var idealWeight;
+
+
+        sex = prompt("Qual o seu sexo? Digite 'M' para masculino ou 'F' para feminino.");
+        height = prompt("Qual a sua altura? Digite em metros. Ex: '1.80'");
+        weight = prompt("Digite qual o seu peso em kg. Ex: '80'");
+
+        
+    
+    if (sex == "M" || sex == "m") {
+
+        idealWeight = (72.7*height) - 58;
+
+        } else if (sex == "F" || sex == "f") {
+
+        idealWeight = (62.1*height) - 44.7;
+
+        } else {
+
+        alert("Dados incorretos: Recarregue a página apertando F5.")
+
+    }
+
+
+
+    if (weight < idealWeight) {
+
+            document.getElementById('mainh2').innerHTML = ("Seu peso ideal é de " + idealWeight + "kg." + " Você está abaixo do seu peso ideal.");
+        
+        } else if (weight == idealWeight) {
+
+            document.getElementById('mainh2').innerHTML = ("Seu peso ideal é de " + idealWeight + "kg." + " Parabéns, você está no seu peso ideal.");
+
+        } else if (weight > idealWeight) {
+            
+            document.getElementById('mainh2').innerHTML = ("Seu peso ideal é de " + idealWeight + "kg." + " Você está acima do seu peso ideal.");
+
+        } else if (weight < idealWeight) {
+
+            document.getElementById('mainh2').innerHTML = ("Seu peso ideal é de " + idealWeight + "kg." + " Você está abaixo do seu peso ideal.");
+
+        } else if (weight == idealWeight) {
+
+            document.getElementById('mainh2').innerHTML = ("Seu peso ideal é de " + idealWeight + "kg." + " Parabéns, você está no seu peso ideal.");
+
+        } else if (weight > idealWeight) {
+
+            document.getElementById('mainh2').innerHTML = ("Seu peso ideal é de " + idealWeight + "kg." + " Você está acima do seu peso ideal.");
+
+    }
+
+    </script>
+</html>
