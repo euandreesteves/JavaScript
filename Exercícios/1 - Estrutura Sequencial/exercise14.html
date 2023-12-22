@@ -31,7 +31,9 @@ Se houver, gravar na variável excesso e na variável multa o valor da multa que
 
         } else {
 
-            document.getElementById('subh1').innerHTML = ("R$0 a pagar. Seu peso está dentro do padrão estabelecido pelo regulamento.");
+            var fine = 'ZERO';
+            excess = 'ZERO';
+            document.getElementById('subh1').innerHTML = (fine + " reais" + " a pagar. Você ultrapassou " + excess + " kilos do limite do peso.");
 
         }
 
