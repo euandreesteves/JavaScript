@@ -11,11 +11,11 @@ Para homens: (72.7*h) - 58 a. Para mulheres: (62.1*h) - 44.7 (h = altura) b. Pe�
         <div id="main">
             <h1 id="mainh1">Cálculo do seu peso ideal.</h1>
             <h2 id="mainh2">Cálculo</h2>
-            <h2 id="subh2">Cálculo</h2>
+            <h2 id="subh2"></h2>
         </div>
     </body>
     <script>
-        
+
         let sex;
         var height;
         var weight;
@@ -38,8 +38,9 @@ Para homens: (72.7*h) - 58 a. Para mulheres: (62.1*h) - 44.7 (h = altura) b. Pe�
 
         } else {
 
-        alert("Dados incorretos: Recarregue a página apertando F5.")
-
+        document.getElementById('mainh2').innerHTML = ("Dados incorretos!");
+        document.getElementById('subh2').innerHTML = ("Recarregue a página apertando 'F5'.");
+        
     }
 
 
