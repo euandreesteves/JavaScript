@@ -1,0 +1,40 @@
+<!-- 14. João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. 
+Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. 
+João precisa que você faça um programa que leia a variável peso (peso de peixes) e verifique se há excesso. 
+Se houver, gravar na variável excesso e na variável multa o valor da multa que João deverá pagar. Caso contrário mostrar tais variáveis com o conteúdo ZERO.  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body>
+        <div id="main">
+            
+            <h1 id="mainh1">Calcular multa de pesca além do permitido.</h1>
+            <h2 id="subh1"></h2>
+            
+        </div>
+    </body>
+    <script>
+        
+        var weight;
+        var excess;
+
+        weight = prompt("Digite a quantidade em kg(Ex: 80) para calcular a multa.");
+
+        if (weight > 50) {
+
+            excess = weight - 50;
+            var fine = excess * 4;
+
+            document.getElementById('subh1').innerHTML = ("R$" + fine + " a pagar. Você ultrapassou " + excess + "kg do limite do peso.");
+
+        } else {
+
+            document.getElementById('subh1').innerHTML = ("R$0 a pagar. Seu peso está dentro do padrão estabelecido pelo regulamento.");
+
+        }
+
+
+    </script>
+</html>
