@@ -1,0 +1,27 @@
+<!-- 18. Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), 
+calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos). -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculando o tempo de download.</title>
+    </head>
+    <body>
+        <div>
+            <h1>Cálculo do tempo aproximado de download.</h1>
+            <h2 id="main1h2"></h2>
+        </div>
+    </body>
+    <script>
+
+        
+        
+
+        var downloadSize = parseInt(prompt("Digite quantos MB possuí o arquivo a ser baixado."));
+        var downloadSpeed = parseInt(prompt("Digite quantos Mb/s o arquivo será baixado."));
+        var downloadTime = downloadSize / (downloadSpeed / 8);
+
+        document.getElementById('main1h2').innerHTML = ("O tempo estimado de download é de: " + (downloadTime / 60) + " minutos ou " + (downloadTime / 3600).toFixed(2) + " horas.");
+
+    </script>
+</html>
